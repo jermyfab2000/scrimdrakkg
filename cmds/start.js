@@ -155,7 +155,7 @@ module.exports.run = async (bot, message, args) => {
 
         console.log(`Collected ${collected.size} items`);
         let endMessage = new Discord.RichEmbed()
-			.setColor("#F80000")
+	    .setColor("#F80000")
             .setDescription("**No Se Aceptan Mas Codigos En Este Punto Buena Suerte!**")
             .setFooter("Chat Bloqueado" , "https://i.imgur.com/iGo7XPH.png")
 		message.channel.send({embed: endMessage});
