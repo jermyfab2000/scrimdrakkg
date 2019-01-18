@@ -106,15 +106,15 @@ module.exports.run = async (bot, message, args) => {
 			}
 				
             const filter = m => !m.author.bot;
-            const collect = bot.guilds.get(message.guild.id).channels.get(general)
+            const collect = bot.guilds.get(message.guild.id).channels.get(commands)
                 .createMessageCollector(filter, {time: 60000});
 
             collect.on('collect', m => {
-                if (m.content === "!auto-stop"){
+                if (m.content === "!auto-stop" || m.content === "!auto-start"){
                     if(validation(allowedRoles.roles, m.member.roles.array()) || m.member.id === owner){
                         clearInterval(autoScrims);
                         collect.stop();
-                        bot.guilds.get(message.guild.id).channels.get(general).send("Auto Scrims Detenidas").catch((err) => {
+                        bot.guilds.get(message.guild.id).channels.get(commands).send("Auto Scrims Detenidas").catch((err) => {
                             console.log(err);
                         });
                     }
