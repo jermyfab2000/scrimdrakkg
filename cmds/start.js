@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args) => {
 -Ingresa los últimos tres dígitos de tu servidor`)
         .setURL("https://www.youtube.com/channel/UColgNyG8CO4ii4Y_ECaQviA")
         .setImage("https://i.imgur.com/9x6QcQg.png")
-        .setColor("#24E711")
+        .setColor("#00A6FF")
         .addField("Hosted by" , message.author)
         .setFooter("Dev By !Fabian Araya (Xccursed_CR)", "https://i.imgur.com/ADnSULk.jpg")
 		.setTimestamp()
@@ -80,7 +80,7 @@ module.exports.run = async (bot, message, args) => {
     },60000);
 
     let last3 = new Discord.RichEmbed()
-        .setTitle ("**Servidores**")
+        .setTitle ("**Partidas Actuales**")
         .setColor ("#1E2460")
 
     setTimeout(async () => {
@@ -127,7 +127,7 @@ module.exports.run = async (bot, message, args) => {
 
     let str = "";
     last3 = new Discord.RichEmbed()
-        .setTitle("**Servidores**")
+        .setTitle("**Partidas Actuales**")
         .setColor("#1E2460")
 
     for (var i =0; i < game.data.length; i++){
@@ -135,7 +135,7 @@ module.exports.run = async (bot, message, args) => {
         for (var j = 0; j < game.data[i].users.length ; j++){
             str += game.data[i].users[j] + "\n";
         }
-        last3.addField(`${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} Jugadores` , str, true);
+        last3.addField(`Servidor ${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} Jugadores` , str, true);
     }    
 
     editLast3.edit({embed: last3}).catch((err) => {
