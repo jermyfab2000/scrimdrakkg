@@ -33,12 +33,12 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("__**Scrims Multiplataforma**__")
         .setThumbnail("https://i.imgur.com/eR5D1t0.png")
         .addField("Instrucciones :",`
-		-Servidor: __**US-East**__
-        -Carga contenido. 
-        -Espera en el canal de conteo. 
-        -Al escuchar el conteo dale listo al sonar la __**Campana**__. 
-        -En caso de ps4 darle listo con el mouse.
-        -Ingresa los últimos tres dígitos de tu servidor`)
+-Servidor: __**US-East**__
+-Carga contenido. 
+-Espera en el canal de conteo. 
+-Al escuchar el conteo dale listo al sonar la __**Campana**__. 
+-En caso de ps4 darle listo con el mouse.
+-Ingresa los últimos tres dígitos de tu servidor`)
         .setURL("https://www.youtube.com/channel/UColgNyG8CO4ii4Y_ECaQviA")
         .setImage("https://i.imgur.com/9x6QcQg.png")
         .setColor("#24E711")
