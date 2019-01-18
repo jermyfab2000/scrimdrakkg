@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
 		-Servidor: __**US-East**__
         -Carga contenido. 
         -Espera en el canal de conteo. 
-        -Al escuchar el conteo dale listo al __**GO**__. 
+        -Al escuchar el conteo dale listo al sonar la __**Campana**__. 
         -En caso de ps4 darle listo con el mouse.
         -Ingresa los últimos tres dígitos de tu servidor`)
         .setURL("https://www.youtube.com/channel/UColgNyG8CO4ii4Y_ECaQviA")
