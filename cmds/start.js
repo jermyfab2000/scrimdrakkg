@@ -44,7 +44,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor("#00A6FF")
         .addField("Hosted by" , message.author)
         .setFooter("Dev By !Fabian Araya (Xccursed_CR)", "https://i.imgur.com/ADnSULk.jpg")
-		.setTimestamp()
+		
         
     
     message.channel.send({embed: startMessage});    
