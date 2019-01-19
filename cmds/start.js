@@ -136,6 +136,8 @@ module.exports.run = async (bot, message, args) => {
             str += game.data[i].users[j] + "\n";
         }
         last3.addField(`Servidor ${game.data[i].id.toUpperCase()} - ${game.data[i].users.length} Jugadores` , str, true);
+	last3.setFooter(`${game.data.length} Servidores | ${game.users.length} Jugadores`)
+        last3.setTimestamp()
     }    
 
     editLast3.edit({embed: last3}).catch((err) => {
