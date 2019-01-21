@@ -5,7 +5,7 @@ const settings = require('./../settings.json');
 const owner = settings.owner;
 
 module.exports.run = async (bot, message, args) => {
-   let voiceChannelID = "534238071286136832";
+   let voiceChannelID = "507080025749848064";
    let voice_channel = message.guild.channels.get(voiceChannelID);
    let members = message.guild.channels.get(voiceChannelID).members.size;
    let roles = message.guild.roles;
