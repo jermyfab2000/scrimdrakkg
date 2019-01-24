@@ -6,10 +6,9 @@ const Squads = "😋";
 module.exports.run = async (bot, message, args) => {
 
 	
-	let general = "536028903458996225";
-	let commands = "536028903458996225";
-	let voiceChannelID = "536028903458996228";
-    let voice_channel = message.guild.channels.get(voiceChannelID);
+	let general = "534611316095057923";
+	let voiceChannelID = "507080025749848064";
+        let voice_channel = message.guild.channels.get(voiceChannelID);
 	let members = message.guild.channels.get(voiceChannelID).members.size;
 
     let msg = await message.channel.send("Votacion De Modalidad! 😉 Solos , 😃 Duos , 😋 Squads . Finaliza En 2 Minutos ");
