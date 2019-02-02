@@ -7,6 +7,8 @@ const owner = settings.owner;
 module.exports.run = async (bot, message, args) => {
 
     let voice = "507080025749848064";
+    let voice_channel = message.guild.channels.get(voice);
+    let members = message.guild.channels.get(voice).members.size;
     let codes = "533711696880074772";
     let general = "534611316095057923";
     let commands = "507271044151771137";
@@ -56,7 +58,8 @@ module.exports.run = async (bot, message, args) => {
                 });
             }else if (min === 59 || min === 29){
                 embed.setTitle("Siguiente Scrim En 1 Minuto **Por Favor estar atento al Conteo y cargar contenido!**")
-				embed.setColor("#F80000");
+		embed.setFooter(`[ ${members} Jugadores En ${voice_channel.name} ]`)
+		embed.setColor("#F80000");
                 bot.guilds.get(message.guild.id).channels.get(general).send({embed: embed}).catch((err) => {
                     console.log(err);
                 });
@@ -84,7 +87,8 @@ module.exports.run = async (bot, message, args) => {
                 });
             }else if (min === 03 || min === 33){
                 embed.setTitle("1 Minuto Para REQ Por Favor estar atento al Conteo y cargar contenido")
-				embed.setColor("#F80000");
+		embed.setFooter(`[ ${members} Jugadores En ${voice_channel.name} ]`)
+		embed.setColor("#F80000");
                 bot.guilds.get(message.guild.id).channels.get(general).send({embed: embed}).catch((err) => {
                     console.log(err);
                 });
