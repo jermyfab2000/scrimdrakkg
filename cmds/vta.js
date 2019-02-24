@@ -6,7 +6,7 @@ const Squads = "😋";
 module.exports.run = async (bot, message, args) => {
 
 	
-	let general = "534611316095057923";
+	let general = "546913631292358657";
 	let voiceChannelID = "507080025749848064";
         let voice_channel = message.guild.channels.get(voiceChannelID);
 	let members = message.guild.channels.get(voiceChannelID).members.size;
