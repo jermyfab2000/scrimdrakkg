@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     let voice_channel = message.guild.channels.get(voice);
     let members = message.guild.channels.get(voice).members.size;
     let codes = "533711696880074772";
-    let general = "534611316095057923";
+    let general = "546913631292358657";
     let commands = "507271044151771137";
 
     console.log("Activating Auto Comamand");
